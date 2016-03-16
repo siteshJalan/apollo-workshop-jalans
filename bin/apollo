@@ -1,0 +1,9 @@
+#!/bin/bash
+set -e
+
+S3_FILE=https://s3-eu-west-1.amazonaws.com/saltside-apollo/apollo_runner.sh
+
+APOLLO_RUNNER=$(curl -s $S3_FILE)
+. /dev/stdin <<< "$APOLLO_RUNNER"
+
+$COMMAND $*
