@@ -1,6 +1,6 @@
 {
     "name": "apollo-workshop-jalans",
-    "image": "tutum/hello-world",
+    "image": "siteshjalan/hello-world",
     "containers": {
         "web": {
             "handoff": {
@@ -10,8 +10,6 @@
                     "host": 80
                 }
             },
-
-            
             "deployment": {
                 "load_balancer": {
                     "access": "internet",
