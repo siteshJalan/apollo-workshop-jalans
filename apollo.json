@@ -1,6 +1,6 @@
 {
     "name": "apollo-workshop-jalans",
-    "image": "siteshjalan/hello-world",
+    "image": "siteshjalan/apollo-workshop",
     "containers": {
         "web": {
             "handoff": {
