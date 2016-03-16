@@ -1,5 +1,5 @@
 GIT_COMMIT:=$(shell git rev-parse --short HEAD)
-IMAGE:=siteshJalan/apollo-workshop-jalans
+IMAGE:=siteshjalan/apollo-workshop-jalans
 .PHONY: build
 build: Dockerfile
 	docker build -t $(IMAGE) .
