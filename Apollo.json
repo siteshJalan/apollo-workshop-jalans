@@ -1,10 +1,10 @@
 {
-    "name": “apollo-workshop-jalans”,
-    "image": “tutum/hello-world",
+    "name": "apollo-workshop-jalans",
+    "image": "tutum/hello-world",
     "containers": {
         "web": {
             "handoff": {
-                "method": "docker",              
+                "method": "docker",
                 "ports": {
                     "container": 80,
                     "host": 80
