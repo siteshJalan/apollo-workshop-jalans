@@ -6,7 +6,7 @@ build: Dockerfile
 
 .PHONY: push
 push: build
-	docker tag siteshjalan/apollo-workshop siteshjalan/appolo-workshop:$(GIT_COMMIT)
+	docker tag siteshjalan/apollo-workshop siteshjalan/apollo-workshop:$(GIT_COMMIT)
 	docker push siteshjalan/apollo-workshop:$(GIT_COMMIT)
 .PHONY: test
 test: build
@@ -14,4 +14,4 @@ test: build
 
 .PHONY: deploy
 deploy: push
-	bin/appolo deploy -e production -m bikroy -t ${GIT_COMMIT)
+	bin/apollo deploy -e production -m bikroy -t ${GIT_COMMIT)
