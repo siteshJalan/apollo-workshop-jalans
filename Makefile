@@ -8,6 +8,9 @@ build: Dockerfile
 push: build
 	docker tag siteshjalan/apollo-workshop siteshjalan/appolo-workshop:$(GIT_COMMIT)
 	docker push siteshjalan/apollo-workshop:$(GIT_COMMIT)
+.PHONY: test
+test: build
+	bin/apollo validate
 
 .PHONY: deploy
 deploy: push
